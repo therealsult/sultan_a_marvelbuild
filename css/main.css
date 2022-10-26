@@ -119,3 +119,70 @@ footer{
     height: 80px; 
     background-color: rgb(40, 37, 37);
 }
+
+
+
+
+
+
+
+/* lightbox styles */
+
+/* Captain lightbos styles */
+.lightbox{
+    display: none;
+
+    width: 100vw;  /* viewport width = width of the browser window */
+    height: 100vh; /* viewport height = height of the browser window */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0,0,0,0.85);
+    background-repeat: no-repeat;
+
+    background-position: 40px bottom;
+    background-size: 55vh;
+}
+
+.lb_close{
+
+    color: aliceblue;
+    font-size: 2em;
+    
+    font-weight: bold;
+
+    text-decoration: none;
+
+    position: relative;
+    top: 5%;
+    left: 95%;
+}
+
+.lb_close:hover {opacity: 0.5 ;}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 33%;
+    margin-top: 50px;
+}
+
+.lb_text, .lb_heading { text-align: left;}
+
+.lb_text {
+    line-height: 1.6;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+#lightBox {
+    
+    background-image: url("../images/Cap_LB_Bg.png");
+}
+
+#lightBox5 {
+    background-image: url("../images/Thor_LB_Bg.png");
+}
+
+.lightbox:target {display: block;}
